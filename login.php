@@ -11,13 +11,13 @@
 	$errflag = false;
 	
 	//Connect to mysql server
-	$link = mysql_connect('localhost','u398623434_reservation',"Letmein#123");
+	$link = mysql_connect('localhost','u854000491_lotreservation',"Letmein123");
 	if(!$link) {
 		die('Failed to connect to server: ' . mysql_error());
 	}
 	
 	//Select database
-	$db = mysql_select_db('u398623434_reservation', $link);
+	$db = mysql_select_db('u854000491_lotreservation', $link);
 	if(!$db) {
 		die("Unable to select database");
 	}
