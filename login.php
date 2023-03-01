@@ -11,7 +11,7 @@
 	$errflag = false;
 	
 	//Connect to mysql server
-	$link = mysql_connect('localhost','u854000491_lotreservation',"Letmein123");
+	$link = mysql_connect('localhost','u854000491_lotreservation',"Letmein#123");
 	if(!$link) {
 		die('Failed to connect to server: ' . mysql_error());
 	}
