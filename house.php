@@ -55,13 +55,13 @@ session_start();
                               <td width="86" align="center" bgcolor="#cccccc">Delete</td>
                             </tr>
                             <?php 
-$con = mysql_connect('localhost','u398623434_reservation',"Letmein#123");
+$con = mysql_connect('localhost','u854000491_lotreservation',"Letmein#123");
 	if (!$con)
 	{
 	die('Could not connect: ' . mysql_error());
 	}
 
-	mysql_select_db("u398623434_reservation", $con);
+	mysql_select_db("u854000491_lotreservation", $con);
 
 // sending query
 $result = mysql_query("SELECT * FROM house ORDER BY house_id");
