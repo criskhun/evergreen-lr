@@ -48,6 +48,11 @@
   </li>
 </ul>
 
+<div class="content">
+
+
+<div style="clear:both"></div>
+</div>
 
 <div style="clear:both"></div>
 <div class="bottommenu"> <a href="#">Terms and Condition</a> | <a href="user_index.php">Home</a> | <a href="userprofile.php">About Us</a> | <a href="user_contactus.php">Contact Us</a>|<a href="#"> Developer</a></div>
