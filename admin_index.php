@@ -78,7 +78,8 @@ echo '<font size="2" color="black"><b>' . $rows. '</b></font>';
 
 	  <a href="confirmed.php">Confirmed Reservation</a>	<br />
 	  <br />
-	  <a href="customers.php">Customer(s)</a><br /><br />	    </div>
+	  <a href="customers.php">Customer(s)</a><br /><br />	
+	  <a href="#">Billing</a><br /><br />    </div>
 	<br />
 </div>
 	  <br />
