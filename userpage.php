@@ -26,7 +26,7 @@
   <li class="top"><a href="userlogout.php" class="top_link"><span>Logout</span></a></li>
   <li class="notification">
     <div class="notification-icon">
-      <i class="fa fa-bell"></i>
+      <i class="fa-solid fa-bell"></i>
       <div class="notification-count">2</div>
     </div>
     <div class="notification-modal">
