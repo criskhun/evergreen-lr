@@ -6,6 +6,7 @@
 <title>Welcome Customer</title>
 <link rel="stylesheet" href="css/styleko.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/dropdown.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/yep.css" type="text/css" media="screen">
 <script src="css/stuHover.js" type="text/javascript"></script>
 </head>
 <body>
@@ -23,12 +24,34 @@
   <li class="top"><a href="userlogout.php" class="top_link"><span>Logout</span></a></li>
 </ul>
 <div class="content">
-  <div align="center">
-	  <h1>WELCOME!<br /><br /> Our valued Customer!<br /><br /></h1>
-	    <h9><div style=" text-decoration:underline; text-transform:capitalize"><?php echo $_SESSION['name']; ?></div>
-	    </h9>
-	  <br /><br />
+<div class="notification-icon">
+  <i class="fa fa-bell"></i>
+  <div class="notification-count">2</div>
+</div>
+
+<div class="notification-modal">
+  <div class="notification-header">
+    <h2>Notifications</h2>
+    <i class="fa fa-times"></i>
+  </div>
+  <div class="notification-list">
+    <div class="notification-item">
+      <p>You have a new message</p>
+      <span>2 min ago</span>
     </div>
+    <div class="notification-item">
+      <p>You have a new friend request</p>
+      <span>1 hour ago</span>
+    </div>
+  </div>
+</div>
+
+<div align="center">
+  <h1>WELCOME!<br /><br /> Our valued Customer!<br /><br /></h1>
+  <h9><div style=" text-decoration:underline; text-transform:capitalize"><?php echo $_SESSION['name']; ?></div></h9>
+  <br /><br />
+</div>
+
 <div style="clear:both"></div>
 </div>
 

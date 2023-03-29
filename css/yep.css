@@ -1,0 +1,66 @@
+.notification-icon {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .notification-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9999;
+  }
+  
+  .notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .notification-header h2 {
+    margin: 0;
+  }
+  
+  .notification-header i {
+    cursor: pointer;
+  }
+  
+  .notification-list {
+    padding: 16px;
+    overflow-y: scroll;
+    max-height: calc(100vh - 100px);
+  }
+  
+  .notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .notification-item p {
+    margin: 0;
+  }
+  
+  .notification-item span {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
