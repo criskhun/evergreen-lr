@@ -28,10 +28,8 @@
 <div class="content">
 
 <div align="center">
-  <h1>WELCOME!<br /><br /> Our valued Customer!<br /><br /></h1>
-  <h9><div style=" text-decoration:underline; text-transform:capitalize"><?php echo $_SESSION['name']; ?></div></h9>
-  <br /><br />
-  <div class="notification-icon">
+  <h1 style="display: inline-block; margin-right: 20px;">WELCOME!<br /><br /> Our valued Customer!</h1>
+  <div class="notification-icon" style="display: inline-block;">
     <i class="fa fa-bell"></i>
     <div class="notification-count">2</div>
   </div>
@@ -53,6 +51,7 @@
     </div>
   </div>
 </div>
+
 
 
 <div style="clear:both"></div>
