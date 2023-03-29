@@ -34,7 +34,7 @@
 <div class="notification-modal">
   <div class="notification-header">
     <h2>Notifications</h2>
-    <i class="fa fa-times"></i>
+    <button class="close-button">Close</button>
   </div>
   <div class="notification-list">
     <div class="notification-item">
