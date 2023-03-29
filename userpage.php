@@ -38,11 +38,11 @@
   </div>
   <div class="notification-list">
     <div class="notification-item">
-      <p>You have a new message</p>
+      <p>lot requirements still pending</p>
       <span>2 min ago</span>
     </div>
     <div class="notification-item">
-      <p>You have a new friend request</p>
+      <p>lot approve</p>
       <span>1 hour ago</span>
     </div>
   </div>
