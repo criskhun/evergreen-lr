@@ -31,28 +31,33 @@
   <div class="notification-count">2</div>
 </div>
 
-<div class="notification-modal">
-  <div class="notification-header">
-    <h2>Notifications</h2>
-    <button class="close-button">Close</button>
-  </div>
-  <div class="notification-list">
-    <div class="notification-item">
-      <p style="color:white">lot requirements still pending</p>
-      <span>2 min ago</span>
-    </div>
-    <div class="notification-item">
-    <p style="color:white">lot approve</p>
-      <span>1 hour ago</span>
-    </div>
-  </div>
-</div>
-
 <div align="center">
   <h1>WELCOME!<br /><br /> Our valued Customer!<br /><br /></h1>
   <h9><div style=" text-decoration:underline; text-transform:capitalize"><?php echo $_SESSION['name']; ?></div></h9>
   <br /><br />
+  <div class="notification-icon">
+    <i class="fa fa-bell"></i>
+    <div class="notification-count">2</div>
+  </div>
+
+  <div class="notification-modal">
+    <div class="notification-header">
+      <h2>Notifications</h2>
+      <button class="close-button">Close</button>
+    </div>
+    <div class="notification-list">
+      <div class="notification-item">
+        <p style="color:white">You have a new approved lot</p>
+        <span>2 min ago</span>
+      </div>
+      <div class="notification-item">
+        <p style="color:white">You have a new rejected lot</p>
+        <span>1 hour ago</span>
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <div style="clear:both"></div>
 </div>

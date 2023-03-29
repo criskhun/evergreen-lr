@@ -15,14 +15,11 @@
   }
   
   .notification-modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 9999;
+    margin: auto;
   }
   
   .notification-header {
@@ -38,7 +35,7 @@
     margin: 0;
   }
   
-  .notification-header i {
+  .notification-header button {
     cursor: pointer;
   }
   
