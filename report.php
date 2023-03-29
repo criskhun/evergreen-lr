@@ -57,6 +57,9 @@ a { color:#a5bc67;text-decoration:none};
 <td><a target="_blank" href="temporary.php?status=Temporarily Reserved"><img src="img/print_temp.png" /></a></td>
 <td><a target="_blank" href="reserved.php?status=Reserved"><img src="img/print_reserved.png" /></a></td>
 </tr>
+<tr>
+<td><a target="_blank" href="sold.php?status=sold"><img src="img/print_sales.png" /></a></td>
+</tr>
 </table>
 
 </div>
