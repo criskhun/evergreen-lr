@@ -49,8 +49,10 @@
 </ul>
 
 <div class="content">
-
-
+<div align="center">
+	  <h1>WELCOME!<br /><br /> Our valued Customer!<br /><br /></h1>
+	    <h9><div style=" text-decoration:underline; text-transform:capitalize"><?php echo $_SESSION['name']; ?></div>
+	    </h9>
 <div style="clear:both"></div>
 </div>
 
