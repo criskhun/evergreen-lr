@@ -26,10 +26,6 @@
   <li class="top"><a href="userlogout.php" class="top_link"><span>Logout</span></a></li>
 </ul>
 <div class="content">
-<div class="notification-icon">
-  <i class="fa fa-bell"></i>
-  <div class="notification-count">2</div>
-</div>
 
 <div align="center">
   <h1>WELCOME!<br /><br /> Our valued Customer!<br /><br /></h1>
