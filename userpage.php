@@ -25,7 +25,7 @@
   <li class="top"><a href="requirements.php" class="top_link"><span>Requirements</span></a></li>
   <li class="top"><a href="user_contactus.php" class="top_link"><span>Contact Us</span></a></li>
   <li class="top"><a href="userlogout.php" class="top_link"><span>Logout</span></a></li>
-  <li class="top"></li>
+  <li class="top"><a href="#" class="top_link"><span>Payment</span></a></li>
   <li class="notification">
   <div class="notification-icon">
   <p style="color:white"><i class="fas fa-bell"></i></p>
