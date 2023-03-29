@@ -34,7 +34,7 @@ require_once("include/auth.php");
 			</ul>
   </li>
   <li class="top"><a href="report.php" class="top_link"><span>Reports</span></a></li>
-  <li class="top"><a href="events.php" class="top_link"><span>Company Events</span></a>
+  <!-- <li class="top"><a href="events.php" class="top_link"><span>Company Events</span></a> -->
   			<ul class="sub">
 			<li><a href="createevent.php" class="fly">Create Events</a></li>
 			</ul></li>
