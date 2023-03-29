@@ -15,14 +15,12 @@
   }
   
   .notification-modal {
-    position: absolute;
-    right: 0;
-    top: 60px;
+    position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 9999;
+    margin: auto;
   }
-  
   
   .notification-header {
     display: flex;
