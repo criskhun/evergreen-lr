@@ -67,16 +67,16 @@ Copyright 2023&copy; RMMC Student Development
 </html>
 
 <script>
-
-  // show notification modal when notification icon is clicked
+// show notification modal when notification icon is clicked
 document.querySelector('.notification-icon').addEventListener('click', function() {
   document.querySelector('.notification-modal').style.display = 'block';
 });
 
 // hide notification modal when close button is clicked
-document.querySelector('.notification-header i').addEventListener('click', function() {
+document.querySelector('.close-button').addEventListener('click', function() {
   document.querySelector('.notification-modal').style.display = 'none';
 });
+
 
 </script>
 
