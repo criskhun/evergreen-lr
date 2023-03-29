@@ -38,11 +38,11 @@
   </div>
   <div class="notification-list">
     <div class="notification-item">
-      <p>lot requirements still pending</p>
+      <p style="color:white">lot requirements still pending</p>
       <span>2 min ago</span>
     </div>
     <div class="notification-item">
-      <p>lot approve</p>
+    <p style="color:white">lot approve</p>
       <span>1 hour ago</span>
     </div>
   </div>
