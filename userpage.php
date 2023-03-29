@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="css/styleko.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/dropdown.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/yep.css" type="text/css" media="screen">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-6i/BSFLj+yWm5pn5Q5O5Kt+JjgkWYc8pOJ/+9F4jv40lNjKc09oyfNwEjrkwes3vCCO44kCj0HDdXd9ql9N3qQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <script src="css/stuHover.js" type="text/javascript"></script>
 </head>
 <body>
