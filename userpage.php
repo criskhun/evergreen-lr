@@ -16,7 +16,7 @@
 <div class="header"><img src="img/header1.gif" width="980" height="250" /></div>
 <br /><br /><br /><br /><br /><br />
 <ul id="nav">
-   <li class="top"><a href="user_index.php" class="top_link"><span>Home</span></a></li>
+  <li class="top"><a href="user_index.php" class="top_link"><span>Home</span></a></li>
   <li class="top"><a href="user_updates.php" class="top_link"><span>Location Map</span></a></li>
   <li class="top"><a href="userprofile.php" class="top_link"><span>Profile</span></a></li>
   <li class="top"><a href="user_ameneties.php" class="top_link"><span>Amenities</span></a></li>
@@ -24,40 +24,30 @@
   <li class="top"><a href="requirements.php" class="top_link"><span>Requirements</span></a></li>
   <li class="top"><a href="user_contactus.php" class="top_link"><span>Contact Us</span></a></li>
   <li class="top"><a href="userlogout.php" class="top_link"><span>Logout</span></a></li>
+  <li class="notification">
+    <div class="notification-icon">
+      <i class="fa fa-bell"></i>
+      <div class="notification-count">2</div>
+    </div>
+    <div class="notification-modal">
+      <div class="notification-header">
+        <h2>Notifications</h2>
+        <button class="close-button">Close</button>
+      </div>
+      <div class="notification-list">
+        <div class="notification-item">
+          <p style="color:white">You have a new approved lot</p>
+          <span>2 min ago</span>
+        </div>
+        <div class="notification-item">
+          <p style="color:white">You have a new rejected lot</p>
+          <span>1 hour ago</span>
+        </div>
+      </div>
+    </div>
+  </li>
 </ul>
-<div class="content">
 
-
-<div align="center">
-  <h1>WELCOME!<br /><br /> Our valued Customer!<br /><br /></h1>
-  <h9><div style=" text-decoration:underline; text-transform:capitalize"><?php echo $_SESSION['name']; ?></div></h9>
-  <br /><br />
-  <div class="notification-icon">
-    <i class="fa fa-bell"></i>
-    <div class="notification-count">2</div>
-  </div>
-
-  <div class="notification-modal">
-    <div class="notification-header">
-      <h2>Notifications</h2>
-      <button class="close-button">Close</button>
-    </div>
-    <div class="notification-list">
-      <div class="notification-item">
-        <p style="color:white">You have a new approved lot</p>
-        <span>2 min ago</span>
-      </div>
-      <div class="notification-item">
-        <p style="color:white">You have a new rejected lot</p>
-        <span>1 hour ago</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div style="clear:both"></div>
-</div>
 
 <div style="clear:both"></div>
 <div class="bottommenu"> <a href="#">Terms and Condition</a> | <a href="user_index.php">Home</a> | <a href="userprofile.php">About Us</a> | <a href="user_contactus.php">Contact Us</a>|<a href="#"> Developer</a></div>
