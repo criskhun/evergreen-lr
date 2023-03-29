@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/yep.css" type="text/css" media="screen">
 <script src="https://kit.fontawesome.com/0b4d5035b5.js" crossorigin="anonymous"></script>
 
+
 <script src="css/stuHover.js" type="text/javascript"></script>
 </head>
 <body>
@@ -26,10 +27,10 @@
   <li class="top"><a href="userlogout.php" class="top_link"><span>Logout</span></a></li>
   <li class="top"></li>
   <li class="notification">
-    <div class="notification-icon">
-      <i class="fa-solid fa-comment" style="color: #9a9a9a;"></i>
-      <div class="notification-count">2</div>
-    </div>
+  <div class="notification-icon">
+    <i class="fas fa-bell"></i>
+    <div class="notification-count">2</div>
+  </div>
     <div class="notification-modal">
       <div class="notification-header">
         <h2>Notifications</h2>
