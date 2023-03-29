@@ -24,6 +24,7 @@
   <li class="top"><a href="requirements.php" class="top_link"><span>Requirements</span></a></li>
   <li class="top"><a href="user_contactus.php" class="top_link"><span>Contact Us</span></a></li>
   <li class="top"><a href="userlogout.php" class="top_link"><span>Logout</span></a></li>
+  <li class="top"></li>
   <li class="notification">
     <div class="notification-icon">
       <i class="fa-solid fa-comment" style="color: #9a9a9a;"></i>
