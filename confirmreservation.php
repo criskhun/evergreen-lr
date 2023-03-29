@@ -75,7 +75,7 @@ $().ready(function() {
 <br /><br /><br /><br /><br /><br />
 <ul id="nav">
     <li class="top"><a href="admin_index.php" class="top_link"><span>Home</span></a></li>
-  <li class="top"><a href="subdivision.php" class="top_link"><span>Subdivision</span></a>
+  <!-- <li class="top"><a href="subdivision.php" class="top_link"><span>Subdivision</span></a> -->
   	  			<ul class="sub">
 			<li><a href="addsub.php" class="fly">Add Subdivision</a></li>
 			</ul>
