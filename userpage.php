@@ -28,7 +28,7 @@
   <li class="top"></li>
   <li class="notification">
   <div class="notification-icon">
-  <p><i class="fas fa-bell"></i></p>
+  <p style="color:white"><i class="fas fa-bell"></i></p>
     <div class="notification-count">2</div>
   </div>
     <div class="notification-modal">
