@@ -1,5 +1,5 @@
  <?php
-mysql_connect("localhost","root","") or die(mysql_error());
+mysql_connect("localhost",'u854000491_lotreservation',"Letmein#123") or die(mysql_error());
 mysql_select_db("reservation") or die(mysql_error());
 $buyer=$_POST['buyer'];
 $date=$_POST['date'];

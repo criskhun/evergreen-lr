@@ -79,7 +79,7 @@ a { color:#a5bc67;text-decoration:none};
 					<li>2 Bedrooms</li>
 					<li>2 T & B</li>
 					<li>Maid's Room</li>
-					<li><a href="martha.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">See Floor Plan</a></li>
+					<li><a href="martha.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">Buy House</a></li>
 				</ul>
 			 </li>
 			 <li style="background-color:#a6c3eb"><a href="img/hrebecca.png"class="highslide" onclick="return hs.expand(this)"><img src="img/hrebecca.png" alt="" width="600" height="600" title="Click to Enlarge Image"/></a>
@@ -95,7 +95,7 @@ a { color:#a5bc67;text-decoration:none};
 
 					<li>Maid's Room</li>
 
-					<li><a href="rebecca.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">See Floor Plan</a></li>
+					<li><a href="rebecca.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">Buy House</a></li>
 				</ul>
 			 </li>
 				<li style="background-color:#b2371e">
@@ -111,7 +111,7 @@ a { color:#a5bc67;text-decoration:none};
 
 					<li>2 T & B</li>
 					<li>Maid's Room</li>
-					<li><a href="olivia.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">See Floor Plan</a></li>
+					<li><a href="olivia.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">Buy House</a></li>
 				</ul>
 			 </li>
 		</ul>
@@ -134,7 +134,7 @@ a { color:#a5bc67;text-decoration:none};
 					<li>2 Bedrooms</li>
 
 					<li>1 T & B</li>
-					<li><a href="elena.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">See Floor Plan</a></li>
+					<li><a href="elena.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">Buy House</a></li>
 				</ul>
 			 </li>
 			 <li style="background-color:#a6c3eb"><a href="img/htheresa.png"class="highslide" onclick="return hs.expand(this)"><img src="img/htheresa.png" alt="" width="600" height="600" title="Click to Enlarge Image"/></a>
@@ -147,7 +147,7 @@ a { color:#a5bc67;text-decoration:none};
 					<li>Carport</li>
 					<li>2 Bedrooms</li>
 					<li>1 T & B</li>
-					<li><a href="teresa.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">See Floor Plan</a></li>
+					<li><a href="teresa.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">Buy House</a></li>
 				</ul>
 			 </li>
 			 <li style="background-color:#b2371e"><a href="img/hcarolina.png"class="highslide" onclick="return hs.expand(this)"><img src="img/hcarolina.png" alt="" width="600" height="600" title="Click to Enlarge Image"/></a>
@@ -160,7 +160,7 @@ a { color:#a5bc67;text-decoration:none};
 					<li>Carport</li>
 					<li>2 Bedrooms</li>
 					<li>1 T & B</li>
-					<li><a href="carolina.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">See Floor Plan</a></li>
+					<li><a href="carolina.php" onclick="return hs.htmlExpand(this, { objectType: 'ajax'} )">Buy House</a></li>
 				</ul>
 			 </li>
 			 </ul>
