@@ -81,6 +81,7 @@ $().ready(function() {
     <td>&nbsp;</td>
     <td>
       <input type="submit" name="register" value="Log-In"  class="btn1"/>
+	  <td><input type="submit" name="register" value="Sign-Up"  class="btn1"/></td>
   </tr>
   <tr>
   <td></td><td align="center"><a href="forgot.php">Forgot Password? </a></td>
