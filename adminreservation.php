@@ -422,7 +422,7 @@ $code .= $string[$y];
 <div style="clear:both"></div>
 <div class="bottommenu"> Terms and Condition | Home | About Us | Contact Us| Developer</div>
 <div class="footer">
-Copyright 2023&copy; RMMC Student Development
+/* Copyright 2023&copy; RMMC Student Development */
 </div>
 </div>
 </body>

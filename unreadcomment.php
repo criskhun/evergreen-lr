@@ -111,7 +111,7 @@ $i++;
 
 <div style="clear:both"></div>
 <div class="footer">
-Copyright 2023&copy; RMMC Student Development
+<!-- Copyright 2023&copy; RMMC Student Development -->
 </div>
 </div>
 </body>
