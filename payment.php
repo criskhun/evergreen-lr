@@ -71,12 +71,14 @@
       </tr>
       <!-- Add more rows for additional balance information -->
     </table>
-  </div>
-
-  <form action="uploadfile.php" method="post" enctype="multipart/form-data">
+    
+    <form action="uploadfile.php" method="post" enctype="multipart/form-data">
   <input type="file" name="image" id="image" accept="image/*">
   <input type="submit" value="Upload Image" name="submit">
 </form>
+  </div>
+
+ 
 
       <div style="clear:both"></div>
 
