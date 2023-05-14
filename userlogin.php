@@ -80,7 +80,8 @@ $().ready(function() {
     <tr>
       <td></td>
       <td align="center">
-        <input type="submit" name="register" value="Log-In" class="btn1" />
+        <input type="submit" name="register" value="Log-In" class="btn1" /><br />
+        <br />
         <input type="submit" name="register2" value="Sign-Up" class="btn1" />
       </td>
     </tr>
@@ -90,6 +91,7 @@ $().ready(function() {
     </tr>
   </table>
 </form>
+
 
 <div align="center">
  <?php
