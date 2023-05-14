@@ -71,7 +71,8 @@
       </tr>
       <!-- Add more rows for additional balance information -->
     </table>
-    
+    <hr>
+    <h2>Upload Proof of Payment</h2>
     <form action="uploadfile.php" method="post" enctype="multipart/form-data">
   <input type="file" name="image" id="image" accept="image/*">
   <input type="submit" value="Upload Image" name="submit">
