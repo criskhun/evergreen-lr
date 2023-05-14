@@ -51,33 +51,7 @@
       </li>
     </ul>
 
-    <div class="content">
-      <div align="center">
-        <h1>WELCOME!<br /><br /> Our valued Customer!<br /><br /></h
-        </div>
-      <h9>
-        <div style="text-decoration: underline; text-transform: capitalize">
-          <?php echo $_SESSION['name']; ?>
-        </div>
-      </h9>
-      <div style="clear:both"></div>
-
-      <div style="clear:both"></div>
-      <div class="bottommenu">
-        <a href="#">Terms and Condition</a> |
-        <a href="user_index.php">Home</a> |
-        <a href="userprofile.php">About Us</a> |
-        <a href="user_contactus.php">Contact Us</a> |
-        <a href="#">Developer</a>
-      </div>
-
-      <div class="footer">
-        <!-- Copyright 2023&copy; RMMC Student Development -->
-      </div>
-    </div>
-  </div>
-
-  <div align="center">
+    <div align="center">
     <h2>Balance Information</h2>
     <table>
       <tr>
@@ -98,6 +72,24 @@
       <!-- Add more rows for additional balance information -->
     </table>
   </div>
+      <div style="clear:both"></div>
+
+      <div style="clear:both"></div>
+      <div class="bottommenu">
+        <a href="#">Terms and Condition</a> |
+        <a href="user_index.php">Home</a> |
+        <a href="userprofile.php">About Us</a> |
+        <a href="user_contactus.php">Contact Us</a> |
+        <a href="#">Developer</a>
+      </div>
+
+      <div class="footer">
+        <!-- Copyright 2023&copy; RMMC Student Development -->
+      </div>
+    </div>
+  </div>
+
+ 
 
 </body>
 </html>
