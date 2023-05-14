@@ -61,13 +61,13 @@
       </tr>
       <tr>
         <td>2023-05-01</td>
-        <td>Income</td>
-        <td>+ $500</td>
+        <td>Installment Payment 1</td>
+        <td>+ 50,000 Php</td>
       </tr>
       <tr>
         <td>2023-05-05</td>
-        <td>Expense</td>
-        <td>- $200</td>
+        <td>Remaining Bal</td>
+        <td>- 350,000 Php</td>
       </tr>
       <!-- Add more rows for additional balance information -->
     </table>
