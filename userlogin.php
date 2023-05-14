@@ -68,29 +68,29 @@ $().ready(function() {
 </ul>
 <div class="content"><br /><br />
 <form action="loginuser.php" method="post" id="signupForm">
-<table width="388" height="193" border="0" align="center">
-  <tr>
-    <td width="123">Email Address: </td>
-    <td width="255" align="center"><input type="text" name="email" class="input" /></td>
-  </tr>
-  <tr>
-    <td>Password</td>
-    <td align="center"><input type="password" name="password" class="input" />
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>
-      <input type="submit" name="register" value="Log-In"  class="btn1"/>
-</td>
-<td>
-<input type="submit" name="register2" value="Sign-Up"  class="btn1"/>
-</td>
-  </tr>
-  <tr>
-  <td></td><td align="center"><a href="forgot.php">Forgot Password? </a></td>
-  </tr>
-</table>
+  <table width="388" height="193" border="0" align="center">
+    <tr>
+      <td width="123">Email Address:</td>
+      <td width="255" align="center"><input type="text" name="email" class="input" /></td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td align="center"><input type="password" name="password" class="input" /></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td align="center">
+        <input type="submit" name="register" value="Log-In" class="btn1" />
+        <input type="submit" name="register2" value="Sign-Up" class="btn1" />
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td align="center"><a href="forgot.php">Forgot Password?</a></td>
+    </tr>
+  </table>
 </form>
+
 <div align="center">
  <?php
 	if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
