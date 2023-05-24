@@ -11,7 +11,7 @@ require_once("include/auth.php");
 <script src="css/stuHover.js" type="text/javascript"></script>
 
 <style type="text/css">
-a { color:#a5bc67;text-decoration:none};
+a { color:#87CEEB;text-decoration:none};
 </style>
 
 </head>
