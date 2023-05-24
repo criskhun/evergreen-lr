@@ -55,6 +55,8 @@ session_start();
       <td width="313" align="center" bgcolor="#cccccc">Address</td>
       <td width="250" align="center" bgcolor="#cccccc">Email</td>
       <td width="132" align="center" bgcolor="#cccccc">Status</td>
+      <td width="53" align="center" bgcolor="#cccccc">Edit</td>
+      <td width="86" align="center" bgcolor="#cccccc">Delete</td>
     </tr>
 	<?php
 include("include/dbconnection.php");
@@ -96,6 +98,8 @@ if ($rows > 0) {
       <td align="left"><?php echo $address ?></td>
       <td width="132" align="left"><a href="viewcustomer.php?email=<?php echo $email; ?>"><?php echo $email ?></a></td>
       <td align="left"><?php echo $status ?></td>
+      <td align="center"><a href="editcustomer.php?houseid= <?php echo $houseid; ?>"><img src="img/edit.png" width="25" height="25" border="0" /></a></td>
+      <td align="center"><a  href="deletecustomer.php?houseid= <?php echo $houseid; ?>"><img src="img/cancel.png" onclick="return confirm('Are you sure you want to delete a house no. <?php echo $houseid ?>:<?php echo $model ?>');" width="25" height="25" border="0"/></td>
     </tr>
     <?php
     $i++;
