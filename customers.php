@@ -41,57 +41,65 @@ session_start();
 </ul>
 <div class="content">
 <div class="content1"><br /><br />
+<form method="GET" action="">
+  <input type="text" name="search" placeholder="Search...">
+  <input type="submit" value="Submit">
+</form>
+
   <table width="841" border="0" align="center">
     <tr>
-      <td width="64" align="center" bgcolor="#cccccc">ID</td>
-      <td width="313" align="center" bgcolor="#cccccc">Name of Customer</td>
-      <td width="250" align="center" bgcolor="#cccccc">Address</td>
-      <td width="132" align="center" bgcolor="#cccccc">Email</td>
+      <td width="64" align="center" bgcolor="#cccccc">Name of Customer</td>
+      <td width="313" align="center" bgcolor="#cccccc">Address</td>
+      <td width="250" align="center" bgcolor="#cccccc">Email</td>
+      <td width="132" align="center" bgcolor="#cccccc">Status</td>
     </tr>
-    <?php 
+	<?php
 include("include/dbconnection.php");
-$result = mysql_query("SELECT * FROM user ORDER BY name");
-if (!$result) 
-	{
-    die("Query to show fields from table failed");
-	}
-$rows = MYSQL_NUMROWS($result);
 
-if ($rows == 0) 
-	{
-	echo '<div style=" color:red; text-align:center;">No Customer(s) exist !</div>';
-	}
-if ($rows > 0) 
-	{
-	$i=0;
-	while ($i<$rows)
-		{		
-			if(($i%2)==0) 
-				{
-					$bgcolor ='#FFFFFF';
-				}
-			else
-				{
-					$bgcolor ='@C0C0C0';
-				}	
-			$userid = MYSQL_RESULT($result,$i,"user_id");
-			$name = MYSQL_RESULT($result,$i,"name");
-			$address = MYSQL_RESULT($result,$i,"address");
-			$email = MYSQL_RESULT($result,$i,"email");
-?>
+$search = isset($_GET['search']) ? $_GET['search'] : '';
+$query = "SELECT buyer, address, email, Rstatus FROM reserve WHERE 
+          buyer LIKE '%$search%' OR
+          address LIKE '%$search%' OR
+          email LIKE '%$search%' OR
+          Rstatus LIKE '%$search%'
+          ORDER BY buyer";
+$result = mysql_query($query);
+
+if (!$result) {
+  die("Query to show fields from table failed");
+}
+
+$rows = mysql_num_rows($result);
+
+if ($rows == 0) {
+  echo '<div style="color:red; text-align:center;">No Customer(s) exist !</div>';
+}
+
+if ($rows > 0) {
+  $i = 0;
+  while ($i < $rows) {
+    if (($i % 2) == 0) {
+      $bgcolor = '#FFFFFF';
+    } else {
+      $bgcolor = '@C0C0C0';
+    }
+    $buyer = mysql_result($result, $i, "buyer");
+    $address = mysql_result($result, $i, "address");
+    $email = mysql_result($result, $i, "email");
+    $status = mysql_result($result, $i, "Rstatus");
+    ?>
     <tr>
-      <td align="center"><?php echo $userid ?></td>
-      <td align="left"><?php echo $name ?></td>
+      <td align="center"><?php echo $buyer ?></td>
       <td align="left"><?php echo $address ?></td>
       <td width="132" align="left"><a href="viewcustomer.php?email=<?php echo $email; ?>"><?php echo $email ?></a></td>
-
+      <td align="left"><?php echo $status ?></td>
     </tr>
-
-    <?php 	
-$i++;		
-	}
-	}	
+    <?php
+    $i++;
+  }
+}
 ?>
+
   </table>
   <br />
 						<br />
