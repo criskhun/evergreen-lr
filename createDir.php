@@ -66,7 +66,7 @@ $().ready(function() {
 	width: auto;
 	font-size:10PX;
 	display: inline;
-	color:#FF0000;
+	color:#192841
 }
 </style>
 

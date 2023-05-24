@@ -35,7 +35,7 @@ $().ready(function() {
 	font-size:10PX;
 	display:list-item;
 	/*display: inline;*/
-	color:#FF0000;
+	color:#192841
 }
 </style>
 </head>

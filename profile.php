@@ -75,7 +75,7 @@
         </div>
     </div>
     <br />
-	<h3 style="font-size:16px; color:#FF0000; text-decoration:underline"><a style="color:#FF0000" href="img/form1.pdf" target="_blank"><marquee behavior="alternate">Download Reservation Form</marquee></a></h3>
+	<h3 style="font-size:16px; color:#192841 text-decoration:underline"><a style="color:#FF0000" href="img/form1.pdf" target="_blank"><marquee behavior="alternate">Download Reservation Form</marquee></a></h3>
 	<br />
   </div>
   <br />

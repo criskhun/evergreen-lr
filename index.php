@@ -67,7 +67,7 @@
 	  <iframe src="http://www.facebook.com/plugins/likebox.php?href=https://www.facebook.com/pages/Dynamic-Properties-and-Realty-Corp/227582780634375&amp;width=250&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=true&amp;height=300" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:300px; margin-left:20px; margin-right:20px;" allowtransparency="true"></iframe>
 	</div>
 	<br />
-	<h3 style="font-size:16px; color:#FF0000; text-decoration:underline"><a style="color:#FF0000" href="img/form1.pdf" target="_blank"><marquee behavior="alternate">Download Reservation Form</marquee></a></h3>
+	<h3 style="font-size:16px; color:#192841 text-decoration:underline"><a style="color:#FF0000" href="img/form1.pdf" target="_blank"><marquee behavior="alternate">Download Reservation Form</marquee></a></h3>
 </div>
 <div class="insidecontent"><center>
  <!-- <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="600" height="600">
