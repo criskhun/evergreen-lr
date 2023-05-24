@@ -20,7 +20,7 @@ require_once("include/auth.php");
 <br /><br /><br /><br /><br /><br />
 <ul id="nav">
   <li class="top"><a href="admin_index.php" class="top_link"><span>Home</span></a></li>
-  <!-- <li class="top"><a href="subdivision.php" class="top_link"><span>Subdivision</span></a> -->
+  <li class="top"><a href="subdivision.php" class="top_link"><span>Subdivision</span></a>
   	  			<ul class="sub">
 			<li><a href="addsub.php" class="fly">Add Subdivision</a></li>
 			</ul>
@@ -79,7 +79,7 @@ echo '<font size="2" color="black"><b>' . $rows. '</b></font>';
 	  <a href="confirmed.php">Confirmed Reservation</a>	<br />
 	  <br />
 	  <a href="customers.php">Customer(s)</a><br /><br />	
-	  <a href="#">Billing</a><br /><br />    </div>
+	  <a href="billing.php">Billing</a><br /><br />    </div>
 	<br />
 </div>
 	  <br />

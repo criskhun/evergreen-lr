@@ -59,7 +59,9 @@ a { color:#3C99DC;text-decoration:none};
 </tr>
 <tr>
 <td><a target="_blank" href="sold.php?status=sold"><img src="img/print_sales.png" /></a></td>
+<td><a target="_blank" href="#"><img src="img/print_ar.png" /></a></td>
 </tr>
+
 </table>
 
 </div>
