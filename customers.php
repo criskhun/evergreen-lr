@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -28,14 +28,15 @@ session_start();
   </li>
   <li class="top"><a href="house.php" class="top_link"><span>House</span></a>
   			<ul class="sub">
-			<li><a href="addhouse.php" class="fly">Add House</a></li>
+				<li><a href="addhouse.php" class="fly">Add House</a></li>
 			</ul>
   </li>
   <li class="top"><a href="report.php" class="top_link"><span>Reports</span></a></li>
   <!-- <li class="top"><a href="events.php" class="top_link"><span>Company Events</span></a> -->
   			<ul class="sub">
-			<li><a href="createevent.php" class="fly">Create Events</a></li>
-			</ul></li>
+				<li><a href="createevent.php" class="fly">Create Events</a></li>
+			</ul>
+  </li>
   <li class="top"><a href="logout.php" class="top_link"><span>Logout</span></a></li>
 
 </ul>
@@ -76,9 +77,7 @@ $rows = mysql_num_rows($result);
 
 if ($rows == 0) {
   echo '<div style="color:red; text-align:center;">No Customer(s) exist !</div>';
-}
-
-if ($rows > 0) {
+} else {
   $i = 0;
   while ($i < $rows) {
     if (($i % 2) == 0) {
@@ -105,7 +104,7 @@ if ($rows > 0) {
 
   </table>
   <br />
-						<br />
+  <br />
 </div>
   <div style="clear:both"></div>
 </div>
