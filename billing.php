@@ -60,11 +60,12 @@ session_start();
 include("include/dbconnection.php");
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT billstat_id, buyer, filename, dateupload FROM billingstatement WHERE 
+$query = "SELECT billstat_id, buyer, filename, dateuploaded, email FROM billingstatement WHERE 
           billstat_id LIKE '%$search%' OR
           buyer LIKE '%$search%' OR
           filename LIKE '%$search%' OR
-          dateupload LIKE '%$search%'
+          dateuploaded LIKE '%$search%' OR
+          dateuploaded LIKE '%$search%'
           ORDER BY buyer";
 $result = mysql_query($query);
 
