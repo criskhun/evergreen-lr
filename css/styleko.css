@@ -22,7 +22,7 @@ width:980px;
 height:auto;
 border:#354c07 solid 10px;
 border-radius:18px;-moz-border-radius:18px;-webkit-border-radius:18px;
-background-color:#87CEEB;
+background-color:#3C99DC;
 
 }
 .header{
@@ -36,7 +36,7 @@ height:25px;
 .content{
 height:inherit;
 width:100%;
-background-color:#87CEEB;
+background-color:#3C99DC;
 }
 content1{
 margin: 20px 20px 20px 20px;
@@ -46,7 +46,7 @@ float:left;
 width:300px;
 height: inherit 100%;
 margin-top: -26px;
-background-color:#99CC33;
+background-color:#66D3FA;
 }
 .sideleft1{
 float:left;
