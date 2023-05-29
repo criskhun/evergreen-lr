@@ -6,7 +6,7 @@ session_start();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Add New Lot</title>
+<title>Add New Balance</title>
 <link rel="stylesheet" href="css/styleko.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/dropdown.css" type="text/css" media="screen">
 <script src="css/stuHover.js" type="text/javascript"></script>
