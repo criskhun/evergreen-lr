@@ -31,7 +31,7 @@ if (!mysql_query($sql))
   {
   die('Error: ' . mysql_error());
   }
-header("location:upload.success.php");
+header("location:upload.successpay.php");
 exit();
 }
 
