@@ -48,6 +48,9 @@ session_start();
   </form>
 </div>
 
+<form action="add_balance.php">
+  <input type="submit" value="Add Balance">
+</form>
 
   <table width="841" border="0" align="center">
     <tr>
@@ -55,6 +58,7 @@ session_start();
       <td width="250" align="center" bgcolor="#cccccc">Balance Date</td>
       <td width="132" align="center" bgcolor="#cccccc">Dateupload</td>
       <td width="132" align="center" bgcolor="#cccccc">Amount</td>
+      <td width="132" align="center" bgcolor="#cccccc">Edit</td>
     </tr>
 	<?php
 include("include/dbconnection.php");
@@ -94,7 +98,6 @@ if ($rows > 0) {
     <tr>
       <td align="center"><?php echo $buyer ?></td>
       <td align="left"><?php echo $address ?></td>
-      <td width="132" align="left"><a href="viewcustomer.php?email=<?php echo $email; ?>"><?php echo $email ?></a></td>
       <td align="left"><?php echo $status ?></td>
     </tr>
     <?php
