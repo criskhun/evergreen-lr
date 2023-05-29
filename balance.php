@@ -46,11 +46,13 @@ session_start();
     <input type="text" name="search" placeholder="Search...">
     <input type="submit" value="Submit">
   </form>
-  <form action="add_balance.php">
+
+</div>
+<div>
+<form action="add_balance.php">
   <input type="submit" value="Add Balance">
 </form>
 </div>
-
 
 
   <table width="841" border="0" align="center">
