@@ -56,7 +56,6 @@ session_start();
       <td width="250" align="center" bgcolor="#cccccc">Email</td>
       <td width="132" align="center" bgcolor="#cccccc">Status</td>
       <td width="53" align="center" bgcolor="#cccccc">Edit</td>
-      <td width="86" align="center" bgcolor="#cccccc">Delete</td>
     </tr>
 	<?php
 include("include/dbconnection.php");
