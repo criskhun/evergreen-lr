@@ -112,7 +112,7 @@ $result = mysql_query("SELECT distinct buyer FROM reserve group by buyer ORDER B
 	<tr>
 	    <td width="81">Balance Desc:</td>
         <td width="293"><select name="baldesc" id="baldesc" style="width:225px" class="input">
-		<option>Select Lot Status</option>
+		<option>Select Descriotion</option>
 		<option>Downpayment</option>
 		<option>Monthly Installment Payment</option>
 		<option>Remaining Balance</option>
