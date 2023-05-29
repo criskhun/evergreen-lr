@@ -54,7 +54,7 @@ session_start();
       <td width="313" align="center" bgcolor="#cccccc">Buyer</td>
       <td width="250" align="center" bgcolor="#cccccc">Balance Date</td>
       <td width="132" align="center" bgcolor="#cccccc">Dateupload</td>
-      <td width="132" align="center" bgcolor="#cccccc">Dateupload</td>
+      <td width="132" align="center" bgcolor="#cccccc">Amount</td>
     </tr>
 	<?php
 include("include/dbconnection.php");
