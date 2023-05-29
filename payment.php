@@ -77,7 +77,7 @@ include("include/dbconnection.php");
 
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT * FROM balance WHERE buyer = '{$_SESSION['name']}' OR balancedate LIKE '%$search%' OR baldesc LIKE '%$search%' OR amount LIKE '%$search%' ORDER BY buyer";
+$query = "SELECT * FROM balance WHERE buyer = '" . $_SESSION['name'] . "' OR balancedate LIKE '%$search%' OR baldesc LIKE '%$search%' OR amount LIKE '%$search%' ORDER BY buyer";
 $result = mysql_query($query);
 
 if (!$result) {
