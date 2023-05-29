@@ -98,7 +98,6 @@ if ($rows > 0) {
       <td width="132" align="left"><a href="viewcustomer.php?email=<?php echo $email; ?>"><?php echo $email ?></a></td>
       <td align="left"><?php echo $status ?></td>
       <td align="center"><a href="#"><img src="img/edit.png" width="25" height="25" border="0" /></a></td>
-      <!-- <td align="center"><a  href="#"><img src="img/cancel.png" onclick="return confirm('Are you sure you want to delete a house no. <?php echo $houseid ?>:<?php echo $model ?>');" width="25" height="25" border="0"/></td> -->
     </tr>
     <?php
     $i++;
