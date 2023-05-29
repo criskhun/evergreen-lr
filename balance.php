@@ -67,11 +67,7 @@ session_start();
 include("include/dbconnection.php");
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT * FROM balance WHERE 
-          buyer LIKE '%$search%' OR
-          balancedate LIKE '%$search%' OR
-          description LIKE '%$search%' OR
-          amount LIKE '%$search%' ORDER BY buyer";
+$query = "SELECT * FROM balance WHERE buyer LIKE '%$search%' OR balancedate LIKE '%$search%' OR baldesc LIKE '%$search%' OR amount LIKE '%$search%' ORDER BY buyer";
 $result = mysql_query($query);
 
 if (!$result) {
@@ -94,7 +90,7 @@ if ($rows > 0) {
     }
     $buyer = mysql_result($result, $i, "buyer");
     $balancedate = mysql_result($result, $i, "balancedate");
-    $desc = mysql_result($result, $i, "description");
+    $desc = mysql_result($result, $i, "baldesc");
     $amount = mysql_result($result, $i, "amount");
     ?>
     <tr>
