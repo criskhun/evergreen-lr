@@ -26,7 +26,7 @@ $email=$_POST['email'];
 			move_uploaded_file($_FILES["image"]["tmp_name"],"requirements/payments/" . $_FILES["image"]["name"]);
 			$picture="requirements/payments/" . $_FILES["image"]["name"];
 	//Create query
-	$sql="INSERT INTO picture (email,buyer,filename, dateuploaded) VALUES ('$email','$buyer','$picture','$date')";
+	$sql="INSERT INTO payment (email,buyer,filename, dateuploaded) VALUES ('$email','$buyer','$picture','$date')";
 if (!mysql_query($sql))
   {
   die('Error: ' . mysql_error());
