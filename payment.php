@@ -75,13 +75,13 @@ include("include/dbconnection.php"); ?>
 	<?php
 include("include/dbconnection.php");
 
-$sessionName = $_SESSION['name'];
-echo "Session Name: " . $sessionName;
+// $sessionName = $_SESSION['name'];
+// echo "Session Name: " . $sessionName;
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
 $query = "SELECT * FROM balance WHERE buyer = '" . $_SESSION['name'] . "'";
 $result = mysql_query($query);
-echo "query stmt: " . $result;
+// echo "query stmt: " . $result;
 
 
 if (!$result) {
