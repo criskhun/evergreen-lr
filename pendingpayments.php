@@ -102,6 +102,10 @@ else if ($rows > 0)
                               <td align="center"><a href="viewpay.php?email=<?php echo $email; ?>"><img src="img/view.png" border="0"width="25" height="25"/></a></td>
                               <td align="center">
 							  <form action="deletependingpayments.php" method="post">
+	<input type="hidden" name="pictureid" value="<?php echo $ids; ?>" />
+	<input type="hidden" name="buyer" value="<?php echo $buyer; ?>" />
+	<input type="hidden" name="dateuploaded" value="<?php echo $dateupload; ?>" />
+	<input type="hidden" name="email" value="<?php echo $email; ?>" />
 	<input type="submit" name="Delete" value="Delete" onclick="return confirm('Are you sure you want to delete Reservation no.<?php echo $ids ?>');"  />
 </form></td>
 <td align="center">
