@@ -51,7 +51,7 @@ require_once("include/auth.php");
       $address = mysql_result($result, $i, "address");
       $email = mysql_result($result, $i, "email");
 	
-	$result = mysql_query("SELECT reserveid, buyer, address, email FROM reserve WHERE reserveid = '$resid' ");     
+	$result = mysql_query("SELECT reserveid, buyer, address, email, status FROM reserve WHERE reserveid = '$resid' ");     
   
   
 
@@ -72,6 +72,7 @@ require_once("include/auth.php");
     $buyer = mysql_result($result, $i, "buyer");
     $address = mysql_result($result, $i, "address");
     $email = mysql_result($result, $i, "email");
+    $status = mysql_result($result, $i, "status");
 	}
 	
 	?>
@@ -93,6 +94,16 @@ require_once("include/auth.php");
       <tr>
         <td>Email</td>
         <td><input name="text3" type="text" class="input" value="<?php echo $email; ?>" /></td>
+      </tr>
+      <tr>
+      <td><select name="type"  id="statusis" style="width: 220px; margin-left:27px; " class="input">
+		<option>Select Status</option>
+		<option selected="selected"><?php echo $status ?></option>
+		<option>single</option>
+    <option>married</option>
+    <option>widowed</option>
+		</select>
+		</td>
       </tr>
     </table>
 	<br />
