@@ -58,8 +58,8 @@ a { color:#3C99DC;text-decoration:none};
 <td><a target="_blank" href="reserved.php?status=Reserved"><img src="img/print_reserved.png" /></a></td>
 </tr>
 <tr>
-<td><a target="_blank" href="sold.php?status=sold"><img src="img/print_sales.png" /></a></td>
-<td><a target="_blank" href="#"><img src="img/print_ar.png" /></a></td>
+<td><a target="_blank" href="sales.php?status=sold"><img src="img/print_sales.png" /></a></td>
+<td><a target="_blank" href="ar.php"><img src="img/print_ar.png" /></a></td>
 </tr>
 
 </table>
