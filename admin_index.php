@@ -79,7 +79,7 @@ echo '<font size="2" color="black"><b>' . $rows. '</b></font>';
 	  <a href="confirmed.php">Confirmed Reservation</a>	<br />
 	  <br />
 	  <a href="customers.php">Customer(s)</a><br /><br />	
-	  <a href="billing.php">Manage Balance</a><br /><br />
+	  <a href="balance.php">Manage Balance</a><br /><br />
 	  <?php
 include("include/dbconnection.php");
 $result = mysql_query("SELECT * FROM payment WHERE status='unpaid'");
