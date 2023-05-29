@@ -98,6 +98,7 @@ else if ($rows > 0)
                               <td height="38" align="center"><?php echo $ids ?></td>
                               <td align="center"><?php echo $buyer ?></td>
                               <td align="center"><?php echo $dateupload ?></td>
+							  <td align="center"><?php echo $status ?></td>
                               <td align="center"><a href="viewpay.php?email=<?php echo $email; ?>"><img src="img/view.png" border="0"width="25" height="25"/></a></td>
                               <td align="center">
 							  <form action="deletependingreserve.php" method="post">
