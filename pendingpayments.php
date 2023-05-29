@@ -100,7 +100,7 @@ else if ($rows > 0)
 							  <td align="center"><?php echo $status ?></td>
                               <td align="center"><a href="viewpay.php?email=<?php echo $email; ?>"><img src="img/view.png" border="0"width="25" height="25"/></a></td>
                               <td align="center">
-							  <form action="deletependingreserve.php" method="post">
+							  <form action="deletependingpayments.php" method="post">
 	<input type="hidden" name="pictureid" value="<?php echo $ids; ?>" />
 	<input type="hidden" name="buyer" value="<?php echo $buyer; ?>" />
 	<input type="hidden" name="dateuploaded" value="<?php echo $dateupload; ?>" />
@@ -108,7 +108,7 @@ else if ($rows > 0)
 	<input type="submit" name="Delete" value="Delete" onclick="return confirm('Are you sure you want to delete Reservation no.<?php echo $ids ?>');"  />
 </form></td>
 <td align="center">
-		<form action="confirmreservation.php" method="post">
+		<form action="confirmpayment.php" method="post">
 		<input type="hidden" name="pictureid" value="<?php echo $ids; ?>" />
 	<input type="hidden" name="buyer" value="<?php echo $buyer; ?>" />
 	<input type="hidden" name="dateuploaded" value="<?php echo $dateupload; ?>" />
