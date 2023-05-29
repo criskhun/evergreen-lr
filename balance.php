@@ -67,7 +67,7 @@ session_start();
 include("include/dbconnection.php");
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT buyer,balancedate,description, amount FROM balance WHERE 
+$query = "SELECT * FROM balance WHERE 
           buyer LIKE '%$search%' OR
           balancedate LIKE '%$search%' OR
           description LIKE '%$search%' OR
@@ -94,9 +94,9 @@ if ($rows > 0) {
       $bgcolor = '@C0C0C0';
     }
     $buyer = mysql_result($result, $i, "buyer");
-    $address = mysql_result($result, $i, "address");
-    $email = mysql_result($result, $i, "email");
-    $status = mysql_result($result, $i, "Rstatus");
+    $address = mysql_result($result, $i, "balancedate");
+    $email = mysql_result($result, $i, "description");
+    $status = mysql_result($result, $i, "amount");
     ?>
     <tr>
       <td align="center"><?php echo $buyer ?></td>
