@@ -51,21 +51,25 @@ session_start();
 
   <table width="841" border="0" align="center">
     <tr>
-      <td width="64" align="center" bgcolor="#cccccc">Billing ID</td>
+      <td width="64" align="center" bgcolor="#cccccc">Payment ID</td>
       <td width="313" align="center" bgcolor="#cccccc">Buyer</td>
-      <td width="250" align="center" bgcolor="#cccccc">Filename</td>
       <td width="132" align="center" bgcolor="#cccccc">Dateupload</td>
+      <td width="250" align="center" bgcolor="#cccccc">Filename</td>
+      <td width="250" align="center" bgcolor="#cccccc">Email</td>
+      <td width="250" align="center" bgcolor="#cccccc">Status</td>
+      
     </tr>
 	<?php
 include("include/dbconnection.php");
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT picture_id, buyer, filename, dateuploaded, email FROM payment WHERE 
-          picture_id LIKE '%$search%' OR
+$query = "SELECT pictureid, buyer, dateuploaded, filename, email, status FROM payment WHERE 
+          pictureid LIKE '%$search%' OR
           buyer LIKE '%$search%' OR
-          filename LIKE '%$search%' OR
           dateuploaded LIKE '%$search%' OR
-          dateuploaded LIKE '%$search%'
+          filename LIKE '%$search%' OR
+          email LIKE '%$search%' OR
+          status LIKE '%$search%'
           ORDER BY buyer";
 $result = mysql_query($query);
 
@@ -76,7 +80,7 @@ if (!$result) {
 $rows = mysql_num_rows($result);
 
 if ($rows == 0) {
-  echo '<div style="color:red; text-align:center;">No Customer(s) exist !</div>';
+  echo '<div style="color:red; text-align:center;">No Payment(s) exist !</div>';
 }
 
 if ($rows > 0) {
@@ -87,16 +91,20 @@ if ($rows > 0) {
     } else {
       $bgcolor = '@C0C0C0';
     }
+    $ids = mysql_result($result, $i, "pictureid");
     $buyer = mysql_result($result, $i, "buyer");
-    $address = mysql_result($result, $i, "address");
+    $dateupload = mysql_result($result, $i, "dateuploaded");
+    $filename = mysql_result($result, $i, "filename");
     $email = mysql_result($result, $i, "email");
-    $status = mysql_result($result, $i, "Rstatus");
+ 
     ?>
     <tr>
+      <td align="center"><?php echo $ids ?></td>
       <td align="center"><?php echo $buyer ?></td>
-      <td align="left"><?php echo $address ?></td>
+      <td align="left"><?php echo $dateupload ?></td>
+      <td align="left"><?php echo $filename ?></td>
       <td width="132" align="left"><a href="viewcustomer.php?email=<?php echo $email; ?>"><?php echo $email ?></a></td>
-      <td align="left"><?php echo $status ?></td>
+
     </tr>
     <?php
     $i++;
