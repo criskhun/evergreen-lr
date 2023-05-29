@@ -7,7 +7,7 @@
  $email=$_POST['email'];
 
 
-mysql_query("UPDATE payment SET status = 'paid 'WHERE reserveid='$picid'");
+mysql_query("UPDATE payment SET status = 'paid' WHERE pictureid='$picid'");
 //header('Location:pendingreservation.php');
 ?> 
 <?php require_once("include/auth.php");?>
