@@ -12,7 +12,7 @@ $subname =$_POST['type'];
 				or die(mysql_error()); 
 	header("Location:customers.php");
 	}else{
-	header("Location:cutomers.php");
+	header("Location:customers.php");
 	}
 	
 	?>
