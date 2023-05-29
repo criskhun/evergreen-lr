@@ -49,7 +49,7 @@ session_start();
 
 </div>
 <div align="center">
-<form action="add_balance.php">
+<form action="addbalance.php">
   <input type="submit" value="Add Balance">
 </form>
 </div>
