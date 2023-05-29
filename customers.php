@@ -62,7 +62,7 @@ session_start();
 include("include/dbconnection.php");
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT buyer, address, email, Rstatus FROM reserve WHERE 
+$query = "SELECT buyer, address, email FROM reserve WHERE 
           buyer LIKE '%$search%' OR
           address LIKE '%$search%' OR
           email LIKE '%$search%' OR
@@ -91,7 +91,6 @@ if ($rows > 0) {
     $buyer = mysql_result($result, $i, "buyer");
     $address = mysql_result($result, $i, "address");
     $email = mysql_result($result, $i, "email");
-    $status = mysql_result($result, $i, "Rstatus");
     ?>
     <tr>
       <td align="center"><?php echo $buyer ?></td>
@@ -99,7 +98,7 @@ if ($rows > 0) {
       <td width="132" align="left"><a href="viewcustomer.php?email=<?php echo $email; ?>"><?php echo $email ?></a></td>
       <td align="left"><?php echo $status ?></td>
       <td align="center"><a href="#"><img src="img/edit.png" width="25" height="25" border="0" /></a></td>
-      <td align="center"><a  href="#"><img src="img/cancel.png" onclick="return confirm('Are you sure you want to delete a house no. <?php echo $houseid ?>:<?php echo $model ?>');" width="25" height="25" border="0"/></td>
+      <!-- <td align="center"><a  href="#"><img src="img/cancel.png" onclick="return confirm('Are you sure you want to delete a house no. <?php echo $houseid ?>:<?php echo $model ?>');" width="25" height="25" border="0"/></td> -->
     </tr>
     <?php
     $i++;
