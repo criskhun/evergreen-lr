@@ -1,6 +1,6 @@
  <?php
 mysql_connect("localhost",'u854000491_lotreservation',"Letmein#123") or die(mysql_error());
-mysql_select_db("reservation") or die(mysql_error());
+mysql_select_db("u854000491_lotreservation") or die(mysql_error());
 $buyer=$_POST['buyer'];
 $date=$_POST['date'];
 $email=$_POST['email'];
