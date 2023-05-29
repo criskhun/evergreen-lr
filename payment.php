@@ -76,7 +76,7 @@ include("include/dbconnection.php"); ?>
     </table>
     <hr>
     <br /><br />
- <a href="uploadpayment.php" ><img src="img/2x2.png"/></a>
+ <a href="uploadpayment.php" ><img src="img/paymentcheck.png"/></a>
  	<?php	
   $result = mysql_query("SELECT * FROM `payment` WHERE email='".$_SESSION['email'] ."' ");
 	if (!$result) 
@@ -89,7 +89,7 @@ include("include/dbconnection.php"); ?>
 		$i=0;
 			$pix = MYSQL_RESULT($result,$i,"filename");						
 	
-	echo '<img src="img/paymentcheck.png" alt="Unable to View" >';
+	echo '<img src="img/check.png" alt="Unable to View" >';
 		}
 	?>
   </div>
