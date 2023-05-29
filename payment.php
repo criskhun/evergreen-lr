@@ -1,4 +1,7 @@
 <?php require_once("include/auth.php"); ?>
+<?php 
+session_start();
+include("include/dbconnection.php"); ?>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -75,7 +78,6 @@
     <br /><br />
  <a href="uploadpayment.php" ><img src="img/2x2.png"/></a>
  	<?php	
-  session_start();
   $result = mysql_query("SELECT * FROM `payment` WHERE email='".$_SESSION['email'] ."' ");
 	if (!$result) 
 		{
