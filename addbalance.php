@@ -108,11 +108,7 @@ $result = mysql_query("SELECT buyer FROM reserve ORDER BY buyer ASC")
 ?>
         </select></td>
     </tr>
-	
-    <tr>
-      <td width="81">Balance Date</td>
-      <td width="293"><input name="baldate" id="baldate" type="hidden" class="input" value="<?php echo date("D, M d, Y"); ?>"/></td>
-    </tr>
+	<td width="293"><input name="baldate" id="baldate" type="hidden" class="input" value="<?php echo date("D, M d, Y"); ?>"/></td>
 	<tr>
 	    <td width="81">Balance Desc:</td>
         <td width="293"><select name="baldesc" id="baldesc" style="width:225px" class="input">
