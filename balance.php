@@ -95,7 +95,7 @@ if ($rows > 0) {
     ?>
     <tr>
       <td align="center"><?php echo $buyer ?></td>
-      <td align="left"><?php echo $balancedate ?></td>
+      <td align="left"> Php&nbsp;<?php echo number_format($amount,2) ; ?></td>
       <td align="left"><?php echo $desc ?></td>
       <td align="left"><?php echo $amount ?></td>
     </tr>
