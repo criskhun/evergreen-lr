@@ -99,7 +99,7 @@ $().ready(function() {
           <option value="-1">Select Buyer</option>
           <?php
 include("include/dbconnection.php");
-$result = mysql_query("SELECT buyer FROM reserve ORDER BY buyer ASC")  
+$result = mysql_query("SELECT distinct buyer FROM reserve ORDER BY buyer ASC")  
         or die (mysql_error());  
      
         while ($row = mysql_fetch_assoc($result)) { 
