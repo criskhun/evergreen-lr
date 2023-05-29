@@ -73,7 +73,7 @@
     </table>
     <hr>
     <br /><br />
- <a href="upload2x2.php" ><img src="img/2x2.png"/></a>
+ <a href="uploadpayment.php" ><img src="img/2x2.png"/></a>
  	<?php	
   $result = mysql_query("SELECT * FROM `payment` WHERE email='".$_SESSION['email'] ."' ");
 	if (!$result) 
