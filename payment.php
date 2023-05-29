@@ -75,10 +75,14 @@ include("include/dbconnection.php"); ?>
 	<?php
 include("include/dbconnection.php");
 
+$sessionName = $_SESSION['name'];
+echo "Session Name: " . $sessionName;
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
 $query = "SELECT * FROM balance WHERE buyer = '" . $_SESSION['name'] . "' AND balancedate LIKE '%$search%' OR baldesc LIKE '%$search%' OR amount LIKE '%$search%' ORDER BY buyer";
 $result = mysql_query($query);
+
+
 
 if (!$result) {
   die("Query to show fields from table failed");
