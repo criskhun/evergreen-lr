@@ -50,6 +50,7 @@ require_once("include/auth.php");
 	    $buyer = mysql_result($result, $i, "buyer");
       $address = mysql_result($result, $i, "address");
       $email = mysql_result($result, $i, "email");
+      $status = mysql_result($result, $i, "status");
 	
 	$result = mysql_query("SELECT reserveid, buyer, address, email, status FROM reserve WHERE reserveid = '$resid' ");     
   
