@@ -87,7 +87,7 @@ else if ($rows > 0)
 				$dateupload = mysql_result($result, $i, "dateuploaded");
 				$filename = mysql_result($result, $i, "filename");
 				$email = mysql_result($result, $i, "email");
-				$status = mysql_result($result, $i, "email");
+				$status = mysql_result($result, $i, "status");
 			//$datelapsed=(date("D, M d, Y"))-$datesubmitted;
 			
 			
