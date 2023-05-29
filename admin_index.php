@@ -80,7 +80,7 @@ echo '<font size="2" color="black"><b>' . $rows. '</b></font>';
 	  <br />
 	  <a href="customers.php">Customer(s)</a><br /><br />	
 	  <a href="billing.php">Billing</a><br /><br />
-	  <a href="admin_payments.php">Payments</a><br /><br />    </div>
+	  <a href="pendingpayments.php">Pending Payments</a><br /><br />    </div>
 	<br />
 </div>
 	  <br />
