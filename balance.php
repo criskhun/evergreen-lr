@@ -48,7 +48,7 @@ session_start();
   </form>
 
 </div>
-<div>
+<div text-align:center;>
 <form action="add_balance.php">
   <input type="submit" value="Add Balance">
 </form>
@@ -77,7 +77,7 @@ if (!$result) {
 $rows = mysql_num_rows($result);
 
 if ($rows == 0) {
-  echo '<div style="color:#192841; text-align:center;">No Balance(s) exist !</div>';
+  echo '<div style="color:red; text-align:center;">No Balance(s) exist !</div>';
 }
 
 if ($rows > 0) {
