@@ -61,7 +61,7 @@ session_start();
 include("include/dbconnection.php");
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT buyer, address, email, status FROM reserve WHERE 
+$query = "SELECT * FROM reserve WHERE 
           buyer LIKE '%$search%' OR
           address LIKE '%$search%' OR
           email LIKE '%$search%' OR
