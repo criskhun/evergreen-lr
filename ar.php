@@ -90,8 +90,7 @@ $result = mysql_query("SELECT * FROM phase  ORDER BY phase ASC")
       <td width="124" align="center" bgcolor="#cccccc">Price</td>
       <td width="140" align="center" bgcolor="#cccccc">Cost Price</td>
       <td width="61" align="center" bgcolor="#cccccc">Status</td>
-      <td width="51" align="center" bgcolor="#cccccc">Edit</td>
-      <td width="68" align="center" bgcolor="#cccccc">Delete</td>
+
     </tr>
     <?php 
 include("include/dbconnection.php");
@@ -156,8 +155,6 @@ else if ($rows > 0)
       <td width="124" align="center" ><font color="#FF0000"> Php</font> <?php echo  number_format($price ,2);?></td>
       <td width="140" align="center" ><font color="#FF0000"> Php</font> <?php echo number_format($tcp,2); ?></td>
       <td width="61" align="center" ><?php echo $status ?></td>
-      <td width="51" align="center" ><a href="editlot.php?lotid= <?php echo $lotid; ?>"><img src="img/edit.png" width="25" height="25" border="0" /></a></h6></td>
-      <td width="68" align="center" ><a href="deletelot.php?lotid= <?php echo $lotid; ?>"><img src="img/cancel.png"onclick="return confirm('Are you sure you want to delete a lot no. <?php echo $lotid ?>');" width="25" height="25" border="0" /></a></td>
     </tr>
     <?php 	
 $i++;		
