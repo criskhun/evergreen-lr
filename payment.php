@@ -55,25 +55,77 @@ include("include/dbconnection.php"); ?>
     </ul>
 
     <div align="center">
-    <h2>Balance Information</h2>
-    <table>
-      <tr>
-        <th>Date</th>
-        <th>Description</th>
-        <th>Amount</th>
-      </tr>
-      <tr>
-        <td>2023-05-01</td>
-        <td>Installment Payment 1</td>
-        <td>+ 50,000 Php</td>
-      </tr>
-      <tr>
-        <td>2023-05-05</td>
-        <td>Remaining Bal</td>
-        <td>- 350,000 Php</td>
-      </tr>
-      <!-- Add more rows for additional balance information -->
-    </table>
+    <div class="content">
+<div class="content1"><br /><br />
+<div class="search-bar">
+  <form method="GET" action="">
+    <input type="text" name="search" placeholder="Search...">
+    <input type="submit" value="Submit">
+  </form>
+
+</div>
+<div align="center">
+<form action="addbalance.php">
+  <input type="submit" value="Add Balance">
+</form>
+</div>
+
+
+  <table width="841" border="0" align="center">
+    <tr>
+      <td width="313" align="center" bgcolor="#cccccc">Buyer</td>
+      <td width="250" align="center" bgcolor="#cccccc">Balance Date</td>
+      <td width="132" align="center" bgcolor="#cccccc">Description</td>
+      <td width="132" align="center" bgcolor="#cccccc">Amount</td>
+      <td width="132" align="center" bgcolor="#cccccc">Edit</td>
+    </tr>
+	<?php
+include("include/dbconnection.php");
+
+
+$search = isset($_GET['search']) ? $_GET['search'] : '';
+$query = "SELECT * FROM balance WHERE buyer = '{$_SESSION['name']}' OR balancedate LIKE '%$search%' OR baldesc LIKE '%$search%' OR amount LIKE '%$search%' ORDER BY buyer";
+$result = mysql_query($query);
+
+if (!$result) {
+  die("Query to show fields from table failed");
+}
+
+$rows = mysql_num_rows($result);
+
+if ($rows == 0) {
+  echo '<div style="color:#192841; text-align:center;">No Balance(s) exist !</div>';
+}
+
+if ($rows > 0) {
+  $i = 0;
+  while ($i < $rows) {
+    if (($i % 2) == 0) {
+      $bgcolor = '#FFFFFF';
+    } else {
+      $bgcolor = '@C0C0C0';
+    }
+    $buyer = mysql_result($result, $i, "buyer");
+    $balancedate = mysql_result($result, $i, "balancedate");
+    $desc = mysql_result($result, $i, "baldesc");
+    $amount = mysql_result($result, $i, "amount");
+    ?>
+    <tr>
+      <td align="center"><?php echo $buyer ?></td>
+      <td align="left"><?php echo $balancedate ?></td>
+      <td align="left"><?php echo $desc ?></td>
+      <td align="left">Php&nbsp;<?php echo number_format($amount,2) ; ?></td>
+    </tr>
+    <?php
+    $i++;
+  }
+}
+?>
+
+  </table>
+  <br />
+						<br />
+</div>
     <hr>
     <br /><br />
  <a href="uploadpayment.php" ><img src="img/paymentcheck.png"/></a>
