@@ -46,12 +46,8 @@ require_once("include/auth.php");
 
 	<?php require("include/dbconnection.php") ?>
 	<?php	
-      $resid = mysql_result($result, $i, "reserveid");
-	    $buyer = mysql_result($result, $i, "buyer");
-      $address = mysql_result($result, $i, "address");
-      $email = mysql_result($result, $i, "email");
-      $status = mysql_result($result, $i, "status");
-	
+  $resid =$_GET['reserveid'];
+
 	$result = mysql_query("SELECT * FROM reserve WHERE reserveid = '$resid' ");     
   
   
