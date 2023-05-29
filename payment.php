@@ -72,11 +72,23 @@
       <!-- Add more rows for additional balance information -->
     </table>
     <hr>
-    <h2>Upload Proof of Payment</h2>
-    <form action="uploadfile.php" method="post" enctype="multipart/form-data">
-  <input type="file" name="image" id="image" accept="image/*">
-  <input type="submit" value="Upload Image" name="submit">
-</form>
+    <br /><br />
+ <a href="upload2x2.php" ><img src="img/2x2.png"/></a>
+ 	<?php	
+  $result = mysql_query("SELECT * FROM `payment` WHERE email='".$_SESSION['email'] ."' ");
+	if (!$result) 
+		{
+		die("Query to show fields from table failed");
+		}
+	$numberOfRows = MYSQL_NUMROWS($result);
+	if ($numberOfRows > 0) 
+		{
+		$i=0;
+			$pix = MYSQL_RESULT($result,$i,"filename");						
+	
+	echo '<img src="img/check.png" alt="Unable to View" >';
+		}
+	?>
   </div>
 
  
