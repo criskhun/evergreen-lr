@@ -51,21 +51,20 @@ session_start();
 
   <table width="841" border="0" align="center">
     <tr>
-      <td width="64" align="center" bgcolor="#cccccc">Billing ID</td>
       <td width="313" align="center" bgcolor="#cccccc">Buyer</td>
-      <td width="250" align="center" bgcolor="#cccccc">Filename</td>
+      <td width="250" align="center" bgcolor="#cccccc">Balance Date</td>
+      <td width="132" align="center" bgcolor="#cccccc">Dateupload</td>
       <td width="132" align="center" bgcolor="#cccccc">Dateupload</td>
     </tr>
 	<?php
 include("include/dbconnection.php");
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT billstat_id, buyer, filename, dateuploaded, email FROM billingstatement WHERE 
-          billstat_id LIKE '%$search%' OR
+$query = "SELECT buyer,balancedate,description, amount FROM balance WHERE 
           buyer LIKE '%$search%' OR
-          filename LIKE '%$search%' OR
-          dateuploaded LIKE '%$search%' OR
-          dateuploaded LIKE '%$search%'
+          balancedate LIKE '%$search%' OR
+          description LIKE '%$search%' OR
+          amount LIKE '%$search%' OR
           ORDER BY buyer";
 $result = mysql_query($query);
 
@@ -76,7 +75,7 @@ if (!$result) {
 $rows = mysql_num_rows($result);
 
 if ($rows == 0) {
-  echo '<div style="color:red; text-align:center;">No Customer(s) exist !</div>';
+  echo '<div style="color:red; text-align:center;">No Balance(s) exist !</div>';
 }
 
 if ($rows > 0) {
