@@ -65,7 +65,7 @@ $rows = MYSQL_NUMROWS($result);
 
 if ($rows == 0) 
 	{
-	echo '<div style=" color:red; text-align:center;">No Confirmed Lots Found !</div>';
+	echo '<div style="color:#192841; text-align:center;">No Confirmed Lots Found !</div>';
 	}
 if ($rows > 0) 
 	{

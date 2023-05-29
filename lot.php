@@ -172,7 +172,7 @@ $rows = MYSQL_NUMROWS($result);
 
 If ($rows == 0) 
 	{
-	echo '<div style=" color:red; text-align:center;">No Lots Found !</div>';
+	echo '<div style="color:#192841; text-align:center;">No Lots Found !</div>';
 	}
 else if ($rows > 0) 
 	{

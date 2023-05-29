@@ -52,7 +52,7 @@ $rows = MYSQL_NUMROWS($result);
 
 If ($rows == 0) 
 	{
-	echo '<div style=" color:red; text-align:center;">No Unread Messages !</div>';
+	echo '<div style="color:#192841; text-align:center;">No Unread Messages !</div>';
 	}
 else if ($rows > 0) 
 	{
