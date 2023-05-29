@@ -88,7 +88,7 @@ require_once("include/auth.php");
       </tr>
       <tr>
         <td width="71">Address</td>
-        <td width="288"><input name="text2" type="text" class="input" value="<?php echo $addre; ?>" /></td>
+        <td width="288"><input name="text2" type="text" class="input" value="<?php echo $address; ?>" /></td>
       </tr>
       </tr>
       <tr>
