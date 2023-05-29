@@ -80,6 +80,12 @@ echo '<font size="2" color="black"><b>' . $rows. '</b></font>';
 	  <br />
 	  <a href="customers.php">Customer(s)</a><br /><br />	
 	  <a href="billing.php">Billing</a><br /><br />
+	  <?php
+include("include/dbconnection.php");
+$result = mysql_query("SELECT * FROM payment WHERE status='unpaid'");
+$rows = mysql_numrows($result);	
+echo '<font size="2" color="black"><b>' . $rows. '</b></font>';
+?>
 	  <a href="pendingpayments.php">Pending Payments</a><br /><br />    </div>
 	<br />
 </div>
