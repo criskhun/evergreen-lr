@@ -89,7 +89,7 @@ include("include/dbconnection.php"); ?>
 		$i=0;
 			$pix = MYSQL_RESULT($result,$i,"filename");						
 	
-	echo '<img src="img/check.png" alt="Unable to View" >';
+	echo '<img src="img/paymentcheck.png" alt="Unable to View" >';
 		}
 	?>
   </div>
