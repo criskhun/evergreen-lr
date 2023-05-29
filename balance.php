@@ -59,7 +59,7 @@ session_start();
     <tr>
       <td width="313" align="center" bgcolor="#cccccc">Buyer</td>
       <td width="250" align="center" bgcolor="#cccccc">Balance Date</td>
-      <td width="132" align="center" bgcolor="#cccccc">Dateupload</td>
+      <td width="132" align="center" bgcolor="#cccccc">Description</td>
       <td width="132" align="center" bgcolor="#cccccc">Amount</td>
       <td width="132" align="center" bgcolor="#cccccc">Edit</td>
     </tr>
