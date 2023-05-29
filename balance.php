@@ -77,7 +77,7 @@ if (!$result) {
 $rows = mysql_num_rows($result);
 
 if ($rows == 0) {
-  echo '<div style="color:red; text-align:center;">No Balance(s) exist !</div>';
+  echo '<div style="color:#192841; text-align:center;">No Balance(s) exist !</div>';
 }
 
 if ($rows > 0) {
