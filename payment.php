@@ -57,14 +57,6 @@ include("include/dbconnection.php"); ?>
     <div align="center">
     <div class="content">
 <div class="content1"><br /><br />
-<div class="search-bar">
-  <form method="GET" action="">
-    <input type="text" name="search" placeholder="Search...">
-    <input type="submit" value="Submit">
-  </form>
-
-</div>
-
   <table width="841" border="0" align="center">
     <tr>
       <td width="313" align="center" bgcolor="#cccccc">Buyer</td>
