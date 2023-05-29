@@ -85,7 +85,6 @@ else if ($rows > 0)
 				$ids = mysql_result($result, $i, "pictureid");
 				$buyer = mysql_result($result, $i, "buyer");
 				$dateupload = mysql_result($result, $i, "dateuploaded");
-				$filename = mysql_result($result, $i, "filename");
 				$email = mysql_result($result, $i, "email");
 				$status = mysql_result($result, $i, "status");
 			//$datelapsed=(date("D, M d, Y"))-$datesubmitted;
@@ -105,7 +104,6 @@ else if ($rows > 0)
 	<input type="hidden" name="pictureid" value="<?php echo $ids; ?>" />
 	<input type="hidden" name="buyer" value="<?php echo $buyer; ?>" />
 	<input type="hidden" name="dateuploaded" value="<?php echo $dateupload; ?>" />
-	<input type="hidden" name="filename" value="<?php echo $filename; ?>" />
 	<input type="hidden" name="email" value="<?php echo $email; ?>" />
 	<input type="submit" name="Delete" value="Delete" onclick="return confirm('Are you sure you want to delete Reservation no.<?php echo $ids ?>');"  />
 </form></td>
