@@ -90,6 +90,7 @@ if ($rows > 0) {
     $buyer = mysql_result($result, $i, "buyer");
     $address = mysql_result($result, $i, "address");
     $email = mysql_result($result, $i, "email");
+    $status = mysql_result($result, $i, "status");
     ?>
     <tr>
       <td align="center"><?php echo $buyer ?></td>
