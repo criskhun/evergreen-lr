@@ -87,6 +87,7 @@ if ($rows > 0) {
     } else {
       $bgcolor = '@C0C0C0';
     }
+    $resid = mysql_result($result, $i, "reserveid");
     $buyer = mysql_result($result, $i, "buyer");
     $address = mysql_result($result, $i, "address");
     $email = mysql_result($result, $i, "email");
@@ -97,7 +98,7 @@ if ($rows > 0) {
       <td align="left"><?php echo $address ?></td>
       <td width="132" align="left"><a href="viewcustomer.php?email=<?php echo $email; ?>"><?php echo $email ?></a></td>
       <td align="left"><?php echo $status ?></td>
-      <td align="center"><a href="editcustomer.php"><img src="img/edit.png" width="25" height="25" border="0" /></a></td>
+      <td align="center"><a href="editcustomer.php?reserveid= <?php echo $resid; ?>"><img src="img/edit.png" width="25" height="25" border="0" /></a></td>
     </tr>
     <?php
     $i++;
