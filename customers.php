@@ -44,7 +44,7 @@ session_start();
 <div class="search-bar">
   <form method="GET" action="">
     <input type="text" name="search" placeholder="Search...">
-    <input type="submit" value="Submit">
+    <input type="submit" value="Search">
   </form>
 </div>
 
