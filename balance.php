@@ -94,13 +94,14 @@ if ($rows > 0) {
       $bgcolor = '@C0C0C0';
     }
     $buyer = mysql_result($result, $i, "buyer");
-    $address = mysql_result($result, $i, "balancedate");
-    $email = mysql_result($result, $i, "description");
+    $balancedate = mysql_result($result, $i, "balancedate");
+    $desc = mysql_result($result, $i, "description");
     $status = mysql_result($result, $i, "amount");
     ?>
     <tr>
       <td align="center"><?php echo $buyer ?></td>
-      <td align="left"><?php echo $address ?></td>
+      <td align="left"><?php echo $balancedate ?></td>
+      <td align="left"><?php echo $desc ?></td>
       <td align="left"><?php echo $status ?></td>
     </tr>
     <?php
