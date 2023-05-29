@@ -52,7 +52,7 @@ require_once("include/auth.php");
       $email = mysql_result($result, $i, "email");
       $status = mysql_result($result, $i, "status");
 	
-	$result = mysql_query("SELECT reserveid, buyer, address, email, status FROM reserve WHERE reserveid = '$resid' ");     
+	$result = mysql_query("SELECT * FROM reserve WHERE reserveid = '$resid' ");     
   
   
 
