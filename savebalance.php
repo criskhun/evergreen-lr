@@ -14,7 +14,7 @@ $amount =$_POST['price'];
 	
 	//Check whether the query was successful or not
 	if($result) {
-		header("location: addbalance.php");
+		header("location: balance.php");
 		exit();
 	}else {
 		die("Query failed");
