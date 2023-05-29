@@ -64,12 +64,6 @@ include("include/dbconnection.php"); ?>
   </form>
 
 </div>
-<div align="center">
-<form action="addbalance.php">
-  <input type="submit" value="Add Balance">
-</form>
-</div>
-
 
   <table width="841" border="0" align="center">
     <tr>
@@ -77,7 +71,6 @@ include("include/dbconnection.php"); ?>
       <td width="250" align="center" bgcolor="#cccccc">Balance Date</td>
       <td width="132" align="center" bgcolor="#cccccc">Description</td>
       <td width="132" align="center" bgcolor="#cccccc">Amount</td>
-      <td width="132" align="center" bgcolor="#cccccc">Edit</td>
     </tr>
 	<?php
 include("include/dbconnection.php");
