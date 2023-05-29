@@ -71,8 +71,7 @@ $query = "SELECT * FROM balance WHERE
           buyer LIKE '%$search%' OR
           balancedate LIKE '%$search%' OR
           description LIKE '%$search%' OR
-          amount LIKE '%$search%' OR
-          ORDER BY buyer";
+          amount LIKE '%$search%' ORDER BY buyer";
 $result = mysql_query($query);
 
 if (!$result) {
