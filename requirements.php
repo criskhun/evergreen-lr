@@ -26,6 +26,8 @@ a{ color:#99ccff;}
   <li class="top"><a href="user_modelhouses.php" class="top_link"><span>Model Houses</span></a></li>
   <li class="top"><a href="requirements.php" class="top_link"><span>Requirements</span></a></li>
   <li class="top"><a href="user_contactus.php" class="top_link"><span>Contact Us</span></a></li>
+  <li class="top"><a href="payment.php" class="top_link"><span>Payment</span></a></li>
+  <li class="top"><a href="userpage.php" class="top_link"><span>Go Back</span></a></li>
   <li class="top"><a href="userlogout.php" class="top_link"><span>Logout</span></a></li>
 </ul>
 <div class="content">
