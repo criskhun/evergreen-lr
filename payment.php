@@ -79,9 +79,9 @@ $sessionName = $_SESSION['name'];
 echo "Session Name: " . $sessionName;
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
-$query = "SELECT * FROM balance WHERE buyer = '" . $_SESSION['name'] . "' AND balancedate LIKE '%$search%' OR baldesc LIKE '%$search%' OR amount LIKE '%$search%' ORDER BY buyer";
+$query = "SELECT * FROM balance WHERE buyer = '" . $_SESSION['name'] . "'";
 $result = mysql_query($query);
-
+echo "query stmt: " . $result;
 
 
 if (!$result) {
