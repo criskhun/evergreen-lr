@@ -96,6 +96,7 @@ require_once("include/auth.php");
         <td><input name="text3" type="text" class="input" value="<?php echo $email; ?>" /></td>
       </tr>
       <tr>
+      <td>Status</td>
       <td><select name="type"  id="statusis" style="width: 220px; margin-left:27px; " class="input">
 		<option>Select Status</option>
 		<option selected="selected"><?php echo $status ?></option>
