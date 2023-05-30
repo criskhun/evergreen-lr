@@ -30,10 +30,10 @@ require_once("include/auth.php");
 			<li><a href="addlot.php" class="fly">Add Lot</a></li>
 			</ul>
   </li>
-  <li class="top"><a href="house.php" class="top_link"><span>House</span></a>
+  <!-- <li class="top"><a href="house.php" class="top_link"><span>House</span></a>
   			<ul class="sub">
 			<li><a href="addhouse.php" class="fly">Add House</a></li>
-			</ul>
+			</ul> -->
   </li>
   <li class="top"><a href="report.php" class="top_link"><span>Reports</span></a></li>
   <!-- <li class="top"><a href="events.php" class="top_link"><span>Company Events</span></a> -->
