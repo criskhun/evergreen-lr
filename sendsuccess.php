@@ -50,7 +50,7 @@ $().ready(function() {
   <li class="top"><a href="profile.php" class="top_link"><span>Profile</span></a></li>
   <li class="top"><a href="#" class="top_link"><span>Updates</span></a></li>
   <li class="top"><a href="amenities.php" class="top_link"><span>Ameneties</span></a></li>
-  <li class="top"><a href="modelhouse.php" class="top_link"><span>Model Houses</span></a></li>
+    <!-- <li class="top"><a href="modelhouse.php" class="top_link"><span>Model Houses</span></a></li> -->
   <li class="top"><a href="contactus.php" class="top_link"><span>Contact Us</span></a></li>
   <li class="top"><a href="userlogin.php" class="top_link"><span>Customer Login</span></a></li>
 </ul>

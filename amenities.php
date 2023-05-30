@@ -70,7 +70,7 @@ var miniGalleryOptions1 = {
   <li class="top"><a href="update.php" class="top_link"><span>Location Map</span></a></li>
   <li class="top"><a href="profile.php" class="top_link"><span>Profile</span></a></li>
   <!-- <li class="top"><a href="amenities.php" class="top_link"><span>Amenities</span></a></li> -->
-  <li class="top"><a href="modelhouse.php" class="top_link"><span>Model Houses</span></a></li>
+    <!-- <li class="top"><a href="modelhouse.php" class="top_link"><span>Model Houses</span></a></li> -->
   <li class="top"><a href="contactus.php" class="top_link"><span>Contact Us</span></a></li>
   <li class="top"><a href="userlogin.php" class="top_link"><span>Customer Login</span></a></li>
 </ul>
