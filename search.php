@@ -58,12 +58,12 @@
 	<br />
 <div class="sidenav">
         <div align="center"><nr><br />
-          <h1>DPRC Office:</h1>
+          <h1>Evergreen Office:</h1>
           Room 101 Mancel Building<br />
           25th Lacson Street<br />
-          Bacolod City<br />
+          General Santos City<br />
           <h1>Email Address:</h1>
-          dprc_bacolod@yahoo.com.ph<br />
+          admin@yahoo.com.ph<br />
           <h1>Telephone Numbers:</h1>
           (034)709-14-86<br />
           (034)433-76-87<br />
