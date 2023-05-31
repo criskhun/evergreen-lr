@@ -38,7 +38,7 @@
       <td align="center">
         <div style="display: flex; justify-content: center;">
           <input type="submit" name="register" value="Log-In" class="btn1" style="margin-right: 10px;" />
-          <input type="submit" name="register" value="Sign-Up" class="btn1" style="margin-left: 10px;" />
+          <!-- <input type="submit" name="register" value="Sign-Up" class="btn1" style="margin-left: 10px;" /> -->
         </div>
       </td>
     </tr>
